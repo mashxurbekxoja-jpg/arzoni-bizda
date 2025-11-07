@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arzoni Bizda</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      @keyframes glow {
+        0%, 100% { text-shadow: 0 0 8px #fff, 0 0 16px #fff, 0 0 24px #e60073, 0 0 32px #e60073; }
+        50% { text-shadow: 0 0 16px #fff, 0 0 24px #ff4da6, 0 0 32px #ff4da6, 0 0 40px #ff4da6; }
+      }
+      .animate-glow {
+        animation: glow 2.5s ease-in-out infinite alternate;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-slate-50">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
